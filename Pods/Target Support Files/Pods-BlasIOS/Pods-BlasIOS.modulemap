@@ -1,0 +1,6 @@
+framework module Pods_BlasIOS {
+  umbrella header "Pods-BlasIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
