@@ -14,6 +14,8 @@
 		A6762C012457BAC200A7CD4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6762BFF2457BAC200A7CD4D /* Main.storyboard */; };
 		A6762C032457BAC600A7CD4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6762C022457BAC600A7CD4D /* Assets.xcassets */; };
 		A6762C062457BAC600A7CD4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6762C042457BAC600A7CD4D /* LaunchScreen.storyboard */; };
+		A6EAA8062460F07100714AB4 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EAA8042460F07100714AB4 /* GalleryCollectionViewCell.swift */; };
+		A6EAA8072460F07100714AB4 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6EAA8052460F07100714AB4 /* GalleryCollectionViewCell.xib */; };
 		AE281EDAF979FFDD1ED7DB26 /* Pods_BlasIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859672A17BBF41A33CBA8DF4 /* Pods_BlasIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		A6762C022457BAC600A7CD4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6762C052457BAC600A7CD4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6762C072457BAC600A7CD4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6EAA8042460F07100714AB4 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6EAA8052460F07100714AB4 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		A6762BFA2457BAC200A7CD4D /* BlasIOS */ = {
 			isa = PBXGroup;
 			children = (
+				A6EAA8012460EFFC00714AB4 /* View */,
 				A621BDBA2457BE4B000C4ED3 /* Middleware */,
 				A621BDB92457BE3F000C4ED3 /* Models */,
 				A6762BFB2457BAC200A7CD4D /* AppDelegate.swift */,
@@ -100,6 +105,15 @@
 				A6762C072457BAC600A7CD4D /* Info.plist */,
 			);
 			path = BlasIOS;
+			sourceTree = "<group>";
+		};
+		A6EAA8012460EFFC00714AB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6EAA8042460F07100714AB4 /* GalleryCollectionViewCell.swift */,
+				A6EAA8052460F07100714AB4 /* GalleryCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CCE515BF9371B574FBD06E58 /* Frameworks */ = {
@@ -171,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6762C062457BAC600A7CD4D /* LaunchScreen.storyboard in Resources */,
+				A6EAA8072460F07100714AB4 /* GalleryCollectionViewCell.xib in Resources */,
 				A6762C032457BAC600A7CD4D /* Assets.xcassets in Resources */,
 				A6762C012457BAC200A7CD4D /* Main.storyboard in Resources */,
 			);
@@ -226,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A621BDBE2457BFD3000C4ED3 /* APIHelper.swift in Sources */,
+				A6EAA8062460F07100714AB4 /* GalleryCollectionViewCell.swift in Sources */,
 				A6762BFE2457BAC200A7CD4D /* ViewController.swift in Sources */,
 				A6762BFC2457BAC200A7CD4D /* AppDelegate.swift in Sources */,
 				A621BDBC2457BE7E000C4ED3 /* Assets.swift in Sources */,

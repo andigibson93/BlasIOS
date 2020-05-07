@@ -29,4 +29,8 @@ class APIHelper {
             }
         }
     }
+    
+    static func getImageEndpointURL(endpoint: String) -> URL {
+        return URL(string: APIHelper.HOST + "/\(endpoint)")!
+    }
 }

@@ -9,6 +9,8 @@ target 'BlasIOS' do
 
   pod 'Kingfisher', '~> 5.13.4'
 
+  pod 'MaterialComponents', '~> 109.1.0'
+
   # Pods for BlasIOS
 
 end
