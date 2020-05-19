@@ -13,8 +13,8 @@ class APIHelper {
     
     static let HOST = "https://blasapi.herokuapp.com"
     
-    static func getAssets(completion: @escaping (_ assest:Assets?, _ error:String?)->()) -> Void{
-        AF.request(APIHelper.HOST + "/all-assets" , method: .get).responseDecodable(of: Assets.self) { response in
+    static func getAssets(categoryName:String, completion: @escaping (_ assest:Assets?, _ error:String?)->()) -> Void{
+        AF.request(APIHelper.HOST + "/categories" + "/\(categoryName)", method: .get).responseDecodable(of: Assets.self) { response in
             print("Response: \(response)")
            
             let result = response.result
@@ -30,7 +30,26 @@ class APIHelper {
         }
     }
     
-    static func getImageEndpointURL(endpoint: String) -> URL {
-        return URL(string: APIHelper.HOST + "/\(endpoint)")!
+    static func getCategories(completion: @escaping (_ categories:Categories?, _ error:String?)->()) -> Void{
+        AF.request(APIHelper.HOST + "/categories" , method: .get).responseDecodable(of: Categories.self) { response in
+            print("Response: \(response)")
+           
+            let result = response.result
+            switch result {
+                
+            case .success(let categories):
+                
+                
+                completion(categories, nil)
+                break
+            case .failure(let error):
+                print(error.localizedDescription)
+                completion(nil, error.localizedDescription)
+            }
+        }
+    }
+    
+    static func getImageEndpointURL(categoryName:String, endpoint: String) -> URL {
+        return URL(string: APIHelper.HOST + "/\(categoryName)" + "/\(endpoint)")!
     }
 }

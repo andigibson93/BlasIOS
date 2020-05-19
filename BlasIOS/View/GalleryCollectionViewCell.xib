@@ -18,15 +18,18 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cg9-X8-yzv">
-                        <rect key="frame" x="0.0" y="44" width="414" height="344"/>
+                        <rect key="frame" x="0.0" y="88" width="414" height="300"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="300" id="JIT-p7-5C2"/>
+                            <constraint firstAttribute="width" constant="414" id="TCE-Kc-WoH"/>
+                        </constraints>
                     </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="Cg9-X8-yzv" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="224-Yr-a9B"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="Cg9-X8-yzv" secondAttribute="bottom" id="Cbu-Ie-hVN"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Cg9-X8-yzv" secondAttribute="trailing" id="JnY-BR-GDG"/>
-                <constraint firstItem="Cg9-X8-yzv" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="fLm-YA-Ud3"/>
+                <constraint firstItem="Cg9-X8-yzv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="88" id="MGo-No-HAA"/>
+                <constraint firstItem="Cg9-X8-yzv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="g5Q-2c-CKZ"/>
+                <constraint firstAttribute="trailing" secondItem="Cg9-X8-yzv" secondAttribute="trailing" id="ino-ns-nCG"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="414" height="388"/>

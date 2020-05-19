@@ -17,5 +17,6 @@ class GalleryCollectionViewCell: MDCCollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
 
 }
